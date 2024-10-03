@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>JS</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Ahorcado</title>
 </head>
 <body>
-    <header>
-
-    </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
-    <script src="./JavaScript/JavaScript.js"></script>
+    <div class="contenedor">
+        <h1>Juego del Ahorcado</h1>
+        <div id="contenedor-palabra"></div>
+        <div id="contenedor-letras"></div>
+        <div id="mensaje"></div>
+        <div id="ahorcado"></div>
+        <div id="contenedor-puntuacion">
+            <p>Intentos restantes: <span id="intentos-restantes">6</span></p>
+        </div>
+        <div class="contenedor-imagen">
+            <img id="imagen-borrosa" src="./img/pelotaborrosa.jpg" alt="Referencia" />
+            <img id="imagen-clara" src="./img/pelota.jpg" alt="Referencia" class="oculto" />
+        </div>
+        <button id="boton-reiniciar" class="oculto">Reiniciar Juego</button>
+    </div>
+    <script src="./JavaScript/script.js"></script>
 </body>
 </html>
