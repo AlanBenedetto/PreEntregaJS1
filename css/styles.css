@@ -1,14 +1,66 @@
-.contenedor {
-    text-align: center;
-    background: white;
-    padding: 150px;
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+#contenedor-juego {
+    background: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: black
+}
+
+.oculto {
+    display: none;
 }
 
 #contenedor-palabra {
     font-size: 24px;
     letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+#pista {
+    margin-bottom: 15px;
+}
+
+#letras {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#entrada-letra {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 5px;
+    width: 50px;
+    text-align: center;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
 
 #contenedor-letras {
@@ -20,26 +72,23 @@
     overflow-y: auto; 
 }
 
-button {
-    padding: 10px; 
-    font-size: 16px; 
-    cursor: pointer;
+#estado p {
+    font-size: 18px;
 }
 
-
-#ahorcado {
-    margin: 20px 0;
+#letras-usadas {
+    font-size: 14px;
+    color: #6c757d;
 }
 
-.contenedor-imagen {
-    position: relative;
+#tabla-puntajes {
+    list-style-type: none;
+    padding: 0;
 }
 
-.oculto {
-    display: none;
-}
-
-img {
-    width: 200px; 
-    height: auto;
+#tabla-puntajes li {
+    background: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
 }

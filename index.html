@@ -3,24 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Ahorcado</title>
 </head>
 <body>
-    <div class="contenedor">
-        <h1>Juego del Ahorcado</h1>
-        <div id="contenedor-palabra"></div>
-        <div id="contenedor-letras"></div>
-        <div id="mensaje"></div>
-        <div id="ahorcado"></div>
-        <div id="contenedor-puntuacion">
-            <p>Intentos restantes: <span id="intentos-restantes">6</span></p>
+    <div id="contenedor-juego">
+        <h1>Ahorcado</h1>
+        <div id="seccion-jugador">
+            <label for="nombre-jugador">Nombre del jugador:</label>
+            <input type="text" id="nombre-jugador" placeholder="Ingresa tu nombre">
+            <button id="iniciar-juego">Empezar juego</button>
         </div>
-        <div class="contenedor-imagen">
-            <img id="imagen-borrosa" src="./img/pelotaborrosa.jpg" alt="Referencia" />
-            <img id="imagen-clara" src="./img/pelota.jpg" alt="Referencia" class="oculto" />
+        
+        <div id="seccion-juego" class="oculto">
+            <div id="contenedor-palabra"></div>
+            <div id="pista">Pista: <span id="texto-pista"></span></div>
+            <div id="estado">
+                <p>Intentos restantes: <span id="intentos-restantes">6</span></p>
+            </div>
+            <div id="letras-usadas">
+                <p>Letras usadas: <span id="lista-letras-usadas"></span></p>
+            </div>
+            <div id="contenedor-letras"></div>
         </div>
-        <button id="boton-reiniciar" class="oculto">Reiniciar Juego</button>
+
+        <div id="seccion-tabla-puntajes">
+            <h2>Mejores puntajes</h2>
+            <ul id="tabla-puntajes"></ul>
+        </div>
     </div>
     <script src="./JavaScript/script.js"></script>
 </body>
