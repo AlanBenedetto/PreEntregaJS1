@@ -1,94 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #e6ecf0;
     margin: 0;
-}
-
-#contenedor-juego {
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    padding: 50px;
-    width: 400px;
-    text-align: center;
-}
-
-h1 {
-    color: black
-}
-
-.oculto {
-    display: none;
-}
-
-#contenedor-palabra {
-    font-size: 24px;
-    letter-spacing: 5px;
-    margin-bottom: 10px;
-}
-
-#pista {
-    margin-bottom: 15px;
-}
-
-#letras {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-#entrada-letra {
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    padding: 5px;
-    width: 50px;
-    text-align: center;
-}
-
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 15px;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#contenedor-letras {
-    margin: 10px 0; 
-    display: grid; 
-    grid-template-columns: repeat(5, 1fr); 
-    grid-gap: 10px; 
-    max-height: 350px;
-    overflow-y: auto; 
-}
-
-#estado p {
-    font-size: 18px;
-}
-
-#letras-usadas {
-    font-size: 14px;
-    color: #6c757d;
-}
-
-#tabla-puntajes {
-    list-style-type: none;
     padding: 0;
 }
 
-#tabla-puntajes li {
-    background: #e9ecef;
-    margin: 5px 0;
+.contenedor {
+    max-width: 600px;
+    margin: 20px auto;
     padding: 10px;
-    border-radius: 4px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #1da1f2;
+}
+
+.entrada-tweet {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#textoTweet {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d95e8;
+}
+
+.tweet {
+    background-color: #f5f8fa;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.tweet p {
+    margin: 0;
+    color: #333;
+}
+
+.acciones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
